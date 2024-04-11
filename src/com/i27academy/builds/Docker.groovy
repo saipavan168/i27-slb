@@ -5,7 +5,11 @@ class Docker {
     Docker(jenkins) {
         this.jenkins = jenkins
     }
-
+        // Addition method
+    def add(firstNumber, secondNumber) { //add(1,2)
+        // logic
+        return firstNumber+secondNumber
+    }
     // Application Build
     def buildApp(appName) {
         jenkins.sh """#!/bin/bash
