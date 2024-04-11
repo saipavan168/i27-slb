@@ -46,8 +46,8 @@ def call(Map pipelineParams) {
             DOCKER_CREDS = credentials('dockerhub')
         }
         tools {
-            maven 'Maven-3.8.8'
-            jdk 'JDK-17'
+            maven 'maven'
+            jdk 'java'
         }
         stages {
             stage ('Build'){
